@@ -1,6 +1,10 @@
 
+
 div {
-    background-image: url("assets/tlo_gora.jpg");
+    /* Zauważ że ten plik "style.css" znajduje się w folderze /styles 
+        Aby zaimportować plik z innego folderu trzeba najpierw wyjść z obecnego, czyli "../" a później nazwa folderu w którym się znajduje
+    */
+    background-image: url("../assets/tlo_gora.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -8,7 +12,7 @@ div {
 }
 
 body{
-    background-image: url('/assets/tlo_gora.jpg');
+    background-image: url('../assets/tlo_gora.jpg');
 }
 
 #navigation_right_bar{
@@ -19,5 +23,5 @@ body{
 }
 
 #nawigacja1{
-    background-image: url("assets/tlo_gora.jpg");
+    background-image: url("../assets/tlo_gora.jpg");
 }
