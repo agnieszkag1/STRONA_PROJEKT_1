@@ -75,6 +75,9 @@
 .top-bar {
     padding: 0 10px;
 }
+#logo img {
+    width: 70px;
+}
 .top-bar ul {
     display: block;
 }
