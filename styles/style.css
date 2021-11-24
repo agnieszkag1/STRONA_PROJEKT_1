@@ -1,0 +1,23 @@
+
+div {
+    background-image: url("assets/tlo_gora.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+   
+}
+
+body{
+    background-image: url('/assets/tlo_gora.jpg');
+}
+
+#navigation_right_bar{
+    text-align:right;
+    margin-top: 25px;
+    margin-right: 25px;
+    word-spacing: 30px;
+}
+
+#nawigacja1{
+    background-image: url("assets/tlo_gora.jpg");
+}
