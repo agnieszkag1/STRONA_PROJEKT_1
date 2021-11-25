@@ -7,45 +7,24 @@
     <title>FAJNA STRONA</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!-- BARDZO POWAŻNY BŁĄD! Pilnuj co przed czym implementujesz, biblioteki są pomocą, NIE POWINNY NADPISYWAĆ TEGO CO TY TWORZYSZ, dlatego muszą być importowane jako pierwsze, 
-        później importujesz swoje w tym wypadku CSS, to samo tyczy się JS, 
-        plik HTML jest czytany od góry do dołu, wyjątkiem jest jak do JS dodajesz komendę "async" wtedy JS ładuje się zawsze na końcu nie ważne gdzie jest umieszczony w kodzie.
-     -->
     <link rel="stylesheet" href="styles/style.css">
 
 </head>
 <body>
 <div id="first_segment">  
-    <!-- Fajnym trikiem jest aby tło które daliśmy troszkę przyciemnić, aby to zrobić musimy otoczyć jeszcze raz wszystko co mamy kolejnym divem który będzie tzw. overlayem i będzie posiadała tło czarne z ustawioną przeźroczystością -->
     <div class="overlay">
-        <nav> 
-            <div style="display:flex"> <!-- Tutaj przydałby się research jak używać bootstrap i po co wgl jest, powinnaś użyć klasy "row" -->
-                 <!-- Nie przypisuj do img szerokości i wysokości, zrób to w CSS skoro już przypisałaś id lub klasę,
-                         Pochwałka za skorzystanie z alt jest to ważne do pozycjonowania strony -->
-                <img src="assets/logo_gora.png" id="logo_img" alt="Logo_NK" width="70px" height="70px">
-                <!-- Pierwsza uwaga, radzę używać wiecej klas niż id -->
-                <div id="logo_left_corner"><b>LOGO</b>  </div> <!-- znaczniki typu <b> już się za bardzo nie stosuje, polecam <span> 
-                    ale nawet jeśli to w tym przypadku nie musisz przecież otaczać tego napisu "LOGO" skoro już stworzyłaś diva z ID i wszystkie style możesz przecież przypisać do tego diva co powoduje że znacznik <b> jest useless -->
-    
-                <!-- Czemu nie osadziłaś tych pozycji od razu w linkach? -->
-                <div id="navigation_right_bar">HOME EXPLORE LISTINGS PAGES BLOG LOGIN/SIGN_UP <button> ADD LISTING  </button></div>
-    
-            </div>
-        </nav> 
-    
-    
-        <!-- Tutaj jak powinien wyglądać top bar: -->
+
+        <!-- TOP BAR -->
         <div class="row justify-content-between top-bar">
             <div class="col-4">
                 <ul>
-                    <!-- Zastanawiasz się dlaczego logo otoczyłem linkiem? Zauważ że jest to standard na wszystkich stronach, że po kliknięciu w logo strony przekierowuje Cię na stronę główną -->
-                    <li><a href="" id="logo"><img src="assets/logo_gora.png" alt="Logo_NK"> Guido</a></li>
+                    <li><a href="" id="logo"><img src="assets/logo_gora.png" id="logo_img" alt="Logo_NK" width="70px" height="70px"> Guido</a></li>
                     <li><a href="">What are you looking for?</a></li>
-                    <li><a href="">Ikona lupki</a></li> <!-- Później pokażę Ci fajną bibliotekę do importowania fency ikonek :D -->
+                    <li><a href="">Ikona lupki</a></li> 
                 </ul>
             </div>
+
             <div class="col-8 text-end">
-                <!-- Tu jest nasza nawigacja i to ten element powinien mieć tag <nav>, a no i nie musisz tworzyć takiiiich dłuuugich nazw chyba że faktycznie jest to duży projekt ale tutaj jak dobrze patrzę na obrazek to mamy tylko jedno menu :D -->
                 <nav id="menu">
                     <ul>
                         <li><a href="">Home</a></li>
@@ -54,7 +33,6 @@
                         <li><a href="">Pages</a></li>
                         <li><a href="">Blog</a></li>
                         <li><a href="">Login/Sign up</a></li>
-                        <!-- Tutaj robimy też link ale z klasą btn dzięki której ostylujemy go tak aby wyglądał jak guzik. -->
                         <li><a href="" class="btn">ADD LISTING</a></li>
                     </ul>
                 </nav>
@@ -65,13 +43,25 @@
         <div id="search"> 
             <h1>Explore Amazing Destinations</h1>
             <p> Find grat places to stay, eat, sleep, shop or visit from local experts.</p>
-            <!-- TODO: zamienić na textboxa chyba??
-                // Tutaj powinien być div z inputami, jest to trochę bardziej zaawansowane więc narazie to pomińmy ten element
-            -->
             <p id="search_bar">What you'd like to find?</p>
         </div>
 
     </div>
+
+<section class="row justify-content-between segment2">
+<div calss="row">
+    <ul>
+        <li><a href=""><img src="assets/ikonka.png" alt="tu powinna być ikonka ale zrobiła fikołka :D" width="150px" height="150px"></a></li>
+        <li><a href=""><img src="assets/ikonka.png" alt="tu powinna być ikonka ale zrobiła fikołka :D" width="150px" height="150px"></a></li>
+        <li><a href=""><img src="assets/ikonka.png" alt="tu powinna być ikonka ale zrobiła fikołka :D" width="150px" height="150px"></a></li>
+        <li><a href=""><img src="assets/ikonka.png" alt="tu powinna być ikonka ale zrobiła fikołka :D" width="150px" height="150px"></a></li>
+        <li><a href=""><img src="assets/ikonka.png" alt="tu powinna być ikonka ale zrobiła fikołka :D" width="150px" height="150px"></a></li>
+        <li><a href=""><img src="assets/ikonka.png" alt="tu powinna być ikonka ale zrobiła fikołka :D" width="150px" height="150px"></a></li>
+
+    </ul>
+</div>
+
+</section>
    
 </div>     
 </body>
