@@ -1,3 +1,8 @@
+body {
+    /* domyślny kolor czcionki na stronie możemy sobie zdefiniować np. w body */
+    color: #222;
+}
+
 #first_segment {
     margin:auto;
     background-image: url("../assets/tlo_gora.jpg");
@@ -5,9 +10,50 @@
     background-attachment: fixed;
     height: 600px;
     background-size: 100% 100%;
-    
-   
 }
+#first_segment .overlay {
+    background: rgba(0,0,0, 0.3);
+    height: 100%;
+}
+
+nav{
+    padding: 20px 20px;
+}
+
+.top-bar {
+    padding: 20px 20px;
+    margin: 0;
+}
+#logo img {
+    width: 70px;
+}
+.top-bar ul {
+    display: block;
+}
+.top-bar ul li {
+    display: inline-block;
+    list-style: none;
+}
+.top-bar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block; 
+    padding: 8px;
+    transition: .3s all ease;
+}
+.top-bar ul li a:hover {
+    color: #000;
+}
+.top-bar .btn {
+    background: #fff;
+    color: #000;
+    padding: 8px 16px;
+}
+.top-bar .btn:hover {
+    background: #000;
+    color: #fff;
+}
+
 
 #logo_img{
     text-align:left;
@@ -45,135 +91,136 @@
     border-radius: 5px;
 }
 
-.overlay {
-    background: rgba(0,0,0, 0.3);
-    height: 100%;
-}
-nav{
-    padding: 20px 20px;
-}
-
-.top-bar {
-    padding: 20px 20px;
-}
-#logo img {
-    width: 70px;
-}
-.top-bar ul {
-    display: block;
-}
-.top-bar ul li {
-    display: inline-block;
-    list-style: none;
-}
-.top-bar ul li a {
-    color: #fff;
-    /* Usuwamy słabo wyglądające podkreślenie: */
-    text-decoration: none;
-    /* tutaj musimy ten element zamienić na blok abyśmy mogli dodać mu troszkę "mięska" wokół :D */
-    display: block; 
-    /* no i robimy z niego grubaska XD */
-    padding: 8px;
-    /* Tutaj chodzi o to że definiujemy czas w jakim mają się wykonywać wszelkie animacje z CSS, w tym wypadku ustawiłem to na 300 milisekund (najbardziej optymalnie według mnie) */
-    transition: .3s all ease;
-}
 
 
-
-/* Dodajemy fency efekt XD */
-.top-bar ul li a:hover {
-    color: #000;
-}
-.top-bar .btn {
-    background: #fff;
-    color: #000;
-    padding: 8px 16px;
-}
-.top-bar .btn:hover {
-    background: #000;
-    color: #fff;
+/* po co powielać i tworzyć pełno klas jak można jedną? i tylko jakieś extra sekcje dodawać jak ta numer dwa 
+.segment3 { */
+.container {
+    text-align: center;
+    margin: 40px auto; /* tak jest zwięźlej i lepiej wizualnie :D */
 }
 
-.segment2{
-    margin-top: -40px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: auto;
+.segment2 {
+    margin-top: -115px; /* wziąłem połowę wysokości tego boxa, wygląda lepiej :D */
+    margin-bottom: 70px;
     z-index: 40;
-    height: 80px;
-    width: 1000px;
+    /* width: 1000px;    mamy nasz problem z szerokością, ustawiłaś na sztywno szerokość, staraj się tak nigdy nie robić, jest coś takiego jak max-width które może ograniczyć box do szerokości ale na mniejszych urządzeniach będzie się zwijał
+    a no i ustawiłem na tyle ile jest w projekcie */
+    max-width: 1230px;
     background-color: white;
-    border-style: solid;
+    /* border-style: solid;
     border-width: 2px;
-    border-color: white;
+    border-color: white; 
+
+    zobacz 3 linijki w jednej:
+
+    border: 2px solid white; 
+
+    swoją drogą po co Ci ten border? bo zaokrąglenie rogów wystarczy właśnie tylko ta linijka poniżej */
     border-radius: 20px;
    
     position: relative;
+    overflow: hidden;
 }
 
-.segment2 ul li {
-    display: inline-block;
-    list-style: none;
+.segment2 .row {
+    padding: 30px;
 }
 
-.segment3{
+.btn-activity {
+    background-color: #f4f4f4;
+    /* tutaj wyjątkowo ustawiłem na sztywno wysokość i szerokość elementów natomiast one same będą się układać względem szerokości, później na telefonach powinna zajść inna akcja ale do tego dojdziemy jak skończymy wersję DESKTOP */
+    height: 150px;
+    width: 170px;
     display: flex;
-    text-align: center;
-    margin-top: 80px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: auto;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+    text-decoration: none;
+    color: #335bd7;
+    transition: .3s all ease;
+    border-radius: 10px;
+    margin: 10px;
 }
 
-.hotel1{
-    background-image: url("../assets/hotel1.jpg");
-    background-repeat: repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-clip: padding-box;
-    width: 300px;
-    height: 230px;
-    border-radius: 20px;
-    
-    
+/* style do ikonki */
+.btn-activity i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.btn-activity span {
+    color: #222;
+    font-weight: bold;
+    font-size: 14px;
+    transition: .3s all ease;
+}
+.btn-activity:hover {
+    background: #335bd7;
+    color: #fff;
+}
+.btn-activity:hover span {
+    color: #fff;
 }
 
-.hotel_text{
-margin-top: 10px;
-color: white;
+.activity-card {
+    /* width: 300px;
+    height: 230px; 
+    staraj się unikać definiowania na sztywno takich wartości, jeżeli chcesz aby strona była responsywna czyli skalowalna w zależności od szerokości ekranu
+    */
+    border-radius: 6px;
+	padding: 10px;
+	border: 1px solid #ddd;
 }
-
-.hotel_text:hover{
-    margin-top: 10px;
-    color: rgb(255, 238, 1);
-    }
-
-.hotel1 .btn {
-    
+.activity-card img {
+    /* niech obraz dopasuje się do szerokości naszej kolumny która będzie się zmieniać w zależności od szerokości ekranu */
+    width: 100%; 
+}
+.activity-img {
+    /* ustawiamy żeby ten element był RELATIVE */
+    position: relative;
+}
+.activity-img .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0, 0.2);
+    padding: 15px;
+    text-align: left;
+}
+.activity-img .tag {
     display: inline-block;
-    border-width: 2px;
-    border-color:white;
-    border-radius: 5px;
-    padding: 4px 8px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 5px;
+}
+.activity-img .tag.right-side {
+    float: right; /* tutaj ustawiamy ten element do prawej */
+    /* Trzymajmy się kolorków z tej makiety :D */
+    background-color: #ed4948;
+    border-color: #ed4948;
 }
 
-.hotel_text_red{
-    margin-left: 60px;
-    margin-top: 10px;
-    color: white;
-    background-color: rgb(80, 8, 8);
+.activity-text {
+    text-align: left;
+    padding-top: 10px;
 }
-
-.hotel_text_red:hover{
-    margin-top: 10px;
-    color: red;
-    background-color: white;
+.activity-text h3 {
+    font-size: 20px;
 }
-
-.hotel1 .btn .hotel_text_red{
-    background: #fff;
-    color: #000;
-    padding: 8px 16px;
+.activity-text p {
+    font-size: 14px;
+    margin-bottom: 10px;
 }
-
-
+.address-info a {
+    display: inline-block;
+    margin-right: 5px;
+    color: #222;
+    text-decoration:none;
+}
+.address-info a:hover {
+    color: #335bd7;
+}
