@@ -231,8 +231,7 @@ nav{
     staraj się unikać definiowania na sztywno takich wartości, jeżeli chcesz aby strona była responsywna czyli skalowalna w zależności od szerokości ekranu
     */
     
-	padding: 10px;
-    margin-top: 10px;
+	padding: 10px 0;
 }
 
 .city-card img {
