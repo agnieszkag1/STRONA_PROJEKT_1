@@ -244,3 +244,11 @@ nav{
     
 }
 
+
+.full-height .row div {
+    height: 100%;
+}
+.full-height img {
+    object-fit: cover;
+    height: 100%;
+}
