@@ -254,3 +254,55 @@ nav{
     height: 100%;
 }
 
+.city-card .overlay {
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0, 0.2);
+    padding: 15px;
+    border-radius: 18px; 
+    color: white;  
+    text-align: center;  
+    justify-content: center;
+}
+.city-card .overlay *{
+    align-self: flex-end;
+    justify-self: center;
+    display: block;
+}
+.city-card .overlay p strong{
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+
+.how{
+    background-color:#EAEAEA;
+    text-align: center;
+    padding: 40px 0;
+    margin: 0 0; 
+}
+
+.header-small p{
+    color: #424949;
+}
+
+.atv-margin{
+    margin: 60px 0;
+}
+
+.circle{
+    border-radius: 100%;
+    color: #4C9EFF;
+    background-color:#EAEAEA;
+    font-size: 50px;
+    height: 100px;
+    width: 100px;
+}
+
+.how-card{
+    background-color: white;
+}

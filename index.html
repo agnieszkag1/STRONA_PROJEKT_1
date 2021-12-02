@@ -98,7 +98,7 @@
  -->
  <section class="container">
     <div class="row">
-        <div class="col-12 text-center">
+        <div class="col-12 text-center header-small">
             <!-- Tutaj też ważne w strukturze html są nagłówki, Lecimy od H1 aż do H6, gdzie H1 powinno się pokazać tylko RAZ na stronę, prawidłowym rozwiązaniem będzie ustawienie tego nagłówka poniżej na H2 -->
             <h2>The Most Popular Things to Do In The City</h2>
             <p>Dicorver some of the most popular listings in Tornoto based on user reviews and ratings.</p>
@@ -111,7 +111,7 @@
          -->
 
     <!-- jak już korzystamy z biblioteki to róbmy to porządnie :D czyli przy row korzystamy również z kolumn. -->
-    <div class="row justify-content-between">
+    <div class="row justify-content-between atv-margin">
         <div class="col-4"> 
             <!-- nazewnictwo klas, wiem że zaczynasz ale staraj się już od początku jakiś standard wprowadzać, ta liczba "1" jest nie potrzebna w nazwie, po prezentacji wizualnej można wywnioskować że są to różne atrakcje nie tylko hotele więc nazwałbym to activity-card -->
             <div class="activity-card">
@@ -196,7 +196,7 @@
 <!-- TRENDING CITIES -->
 <section class="container">
     <div class="row">
-        <div class="col-12 text-center">
+        <div class="col-12 text-center header-small">
             <h2>Trending Cities</h2>
             <p>Cities You Must Discover This Summer</p>
         </div>
@@ -209,6 +209,10 @@
                 <div class="city-card">
                     <div class="activity-img">
                         <img   src="assets/miami.jpg" alt="miami">
+                        <div class="overlay">
+                            <p> <strong>Miami</strong> 
+                                654 Listings</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -217,6 +221,10 @@
                 <div class="city-card">
                     <div class="activity-img">
                         <img src="assets/los.jpg" alt="Los Angeles">
+                        <div class="overlay">
+                           <p> <strong>Los Angeles</strong> 
+                            342 Listings</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -229,6 +237,10 @@
                 <div class="city-card">
                     <div class="activity-img">
                         <img src="assets/florida.jpg" alt="Florida">
+                        <div class="overlay">
+                            <p> <strong>Florida</strong> 
+                                321 Listings</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -237,6 +249,10 @@
                 <div class="city-card">
                     <div class="activity-img">
                         <img   src="assets/new.jpg" alt="New York">
+                        <div class="overlay">
+                            <p> <strong>New York</strong> 
+                                967 Listings</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -244,8 +260,60 @@
 
     </div>
 
-    
+</section>
 
+
+<!--HOW IT WORKS ???????????????-->
+
+<section class="how">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center header-small">
+                <h2>How it works?</h2>
+                <p>Bringing buisness and community members together.</p>
+            </div>
+        </div>
+
+        <div class="row justify-content-between">
+
+            <div class="col-4 how-card"> 
+                <div class="circle row">
+                    <i class="fas fa-search-location"></i>
+                </div>
+
+                <div class="text-center">
+                    <p> <strong>Find Buisnesses</strong> 
+                        Discorver and connect with great local buisnesses in you local neighborhood like dentists, hair stylists and more.</p>
+
+                </div>
+            </div>
+
+            <div class="col-4 how-card"> 
+                <div class="circle row">
+                    <i class="fas fa-search-location"></i>
+                </div>
+
+                <div class="text-center">
+                    <p> <strong>Find Buisnesses</strong> 
+                        Discorver and connect with great local buisnesses in you local neighborhood like dentists, hair stylists and more.</p>
+
+                </div>
+            </div>
+
+            <div class="col-4 how-card"> 
+                <div class="circle row">
+                    <i class="fas fa-search-location"></i>
+                </div>
+
+                <div class="text-center">
+                    <p> <strong>Find Buisnesses</strong> 
+                        Discorver and connect with great local buisnesses in you local neighborhood like dentists, hair stylists and more.</p>
+
+                </div>
+            </div>
+      
+        </div>
+    </div>
 
 </section>
    
