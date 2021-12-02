@@ -97,6 +97,7 @@ nav{
 .segment3 { */
 .container {
     text-align: center;
+    padding: 40px 0;
     margin: 40px auto; /* tak jest zwięźlej i lepiej wizualnie :D */
 }
 
@@ -121,6 +122,7 @@ nav{
    
     position: relative;
     overflow: hidden;
+    padding: 0;
 }
 
 .segment2 .row {
@@ -251,3 +253,4 @@ nav{
     object-fit: cover;
     height: 100%;
 }
+
