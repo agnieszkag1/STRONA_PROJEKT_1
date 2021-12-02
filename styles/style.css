@@ -224,3 +224,24 @@ nav{
 .address-info a:hover {
     color: #335bd7;
 }
+
+.city-card {
+    /* width: 300px;
+    height: 230px; 
+    staraj się unikać definiowania na sztywno takich wartości, jeżeli chcesz aby strona była responsywna czyli skalowalna w zależności od szerokości ekranu
+    */
+    width: 100%;
+    height: 100%;
+	padding: 10px;
+    margin-top: 10px;
+}
+
+.city-card img {
+    /* niech obraz dopasuje się do szerokości naszej kolumny która będzie się zmieniać w zależności od szerokości ekranu */
+    width: 100%;
+    height: 100%;
+    border-radius: 18px; 
+   
+    
+}
+
